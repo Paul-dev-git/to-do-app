@@ -154,12 +154,8 @@ h5 {
 
 @media (max-width: 600px) {
     .wrapper {
-        padding-left: 0;
-        padding-right: 0;
-    }
-
-    .overview {
-        padding: 6px;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 
     p,

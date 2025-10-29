@@ -154,13 +154,17 @@ h5 {
 
 @media (max-width: 600px) {
     .wrapper {
-        padding-left: 10px;
-        padding-right: 10px;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    input {
+        width: 100px;
     }
 
     p,
     h5 {
-        padding-left: 10px;
+        padding-left: 100px;
     }
 }
 

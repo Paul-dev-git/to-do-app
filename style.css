@@ -2,31 +2,15 @@
     --bg: hsl(0 0% 90%);
     --bg-light: hsl(0, 0%, 100%);
     --bg-dark: hsl(0, 0%, 85%);
-
     --bg-gradient: linear-gradient(to bottom, var(--bg-light), var(--bg));
-
     --text: hsl(0, 0%, 10%);
     --text-muted: hsl(0 0% 20%);
-
     --border: hsl(0, 0%, 40%);
     --shadow: hsla(0 0% 0% / 0.35);
-
     --primary: hsl(210 100% 75%);
     --secondary: hsl(224 100% 67.6%);
-
     --gradient: linear-gradient(to bottom right, var(--primary), var(--secondary));
-
     --radius: 20px;
-}
-
-h1 {
-    font-family: Arial, sans-serif;
-    font-weight: normal;
-    color: var(--text);
-    padding: 1px 1px 1px 30px;
-    text-align: left;
-
-
 }
 
 body {
@@ -38,6 +22,14 @@ body {
     margin: 0;
     display: flex;
     justify-content: center;
+    overflow-x: hidden;
+}
+
+.wrapper {
+    padding-left: 80px;
+    padding-right: 80px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .overview {
@@ -50,11 +42,18 @@ body {
     margin-top: 30px;
 }
 
+h1 {
+    font-weight: normal;
+    color: var(--text);
+    padding: 1px 1px 1px 30px;
+    text-align: left;
+}
+
 button {
     background: var(--gradient);
     border-radius: var(--radius);
     border: none;
-    padding: 10px 15px 10px 15px;
+    padding: 10px 15px;
     margin-left: -40px;
     margin-top: 10px;
     color: var(--bg);
@@ -65,21 +64,19 @@ input {
     background: var(--bg-dark);
     border-radius: var(--radius);
     border: none;
-    font-weight: normal;
     color: var(--text);
-    padding: 10px 15px 10px 15px;
+    padding: 10px 15px;
     margin-top: 10px;
     margin-left: 25px;
     width: 300px;
+}
 
+input:focus {
+    outline: none;
 }
 
 ::placeholder {
     color: var(--text);
-}
-
-.item {
-
 }
 
 ul {
@@ -88,24 +85,17 @@ ul {
 }
 
 li {
-    list-style: none;
-    padding-bottom: 20px;
     font-weight: bold;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-bottom: 20px;
 }
 
 input[type="checkbox"] {
     width: 15px;
     height: 15px;
     accent-color: var(--secondary);
-    color: var(--text);
-
-}
-
-input:focus {
-    outline: none;
 }
 
 li button {
@@ -137,27 +127,33 @@ a {
     color: var(--secondary);
 }
 
-p {
-    color: var(--text-muted);
-    padding-left: 30px;
-}
-
+p,
 h5 {
     color: var(--text-muted);
     padding-left: 30px;
 }
 
-.wrapper {
-    padding-left: 80px;
-    padding-right: 80px;
-}
-
 @media (max-width: 600px) {
-    .overview{
-        padding: -10px;
+    .wrapper {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .overview {
+        padding: 6px;
+    }
+
+    input {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    button {
+        margin-left: 0;
+    }
+
+    p,
+    h5 {
+        padding-left: 10px;
     }
 }
-
-
-
-

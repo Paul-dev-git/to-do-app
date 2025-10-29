@@ -34,7 +34,7 @@ body {
     background: var(--gradient);
     background-size: 100% 100%;
     background-position: center;
-    height: 100vh;
+    height: 100dvh;
     margin: 0;
     display: flex;
     justify-content: center;
@@ -42,6 +42,7 @@ body {
 
 .overview {
     background: var(--bg-gradient);
+    max-width: 100%;
     padding: 10px;
     border-radius: var(--radius);
     border: 1px solid var(--border);
@@ -151,7 +152,7 @@ h5 {
     padding-right: 80px;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 600px) {
     .overview{
         padding: -10px;
     }

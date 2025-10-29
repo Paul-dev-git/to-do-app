@@ -135,8 +135,8 @@ h5 {
 
 @media (max-width: 600px) {
     .wrapper {
-        padding-left: 0;
-        padding-right: 0;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     .overview {
@@ -144,7 +144,7 @@ h5 {
     }
 
     input {
-        width: 100%;
+        width: 80%;
         margin-left: 0;
     }
 

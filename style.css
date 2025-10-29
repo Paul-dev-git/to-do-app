@@ -151,10 +151,9 @@ h5 {
     padding-right: 80px;
 }
 
-@media (max-width: 600px) {
-    .wrapper {
-        padding-left: -100px;
-        padding-right: -100px;
+@media (max-width: 700px) {
+    .overview{
+        padding: -10px;
     }
 }
 
